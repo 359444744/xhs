@@ -79,22 +79,6 @@ for api_group in api_groups:
             f.write(pyresult)
         # with open('E:\\拼多多api\\pdd\\api\\_init_.py','a') as f:
         #     f.write('from pdd.api.rest.{} import {} \n'.format(class_name,class_name))
-        print("from pdd.api.rest.{} import {}".format(class_name,class_name))
+        print("from xhs.api.rest.{} import {}".format(class_name,class_name))
 
 
-# response=requests.get('https://op.jinritemai.com/doc/external/open/queryDocArticleDetail?articleId=82&onlyView=false')
-# text=response.json().get('data').get('article').get('content')
-# lins= text.split('\n')
-# for line in lins:
-#     if '请求入参' in line:
-#         index=lins.index(line)
-#         data=lins[index+1]
-#         if 'Tree' in data:
-#             doucment=BeautifulSoup(data,'lxml')
-#             treetable=doucment.find('treetable')
-#             datasource=treetable.attrs['datasource']
-#             print(datasource)
-#     if '响应字段' in line:
-#         index=lins.index(line)
-#         data=lins[index+1]
-#         print(data)
